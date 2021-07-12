@@ -270,18 +270,15 @@ files:
 - name: src/editor/Storage.java
   visible: true
   learner_created: true
-- name: src/editor/res/Hello.txt
+- name: src/editor/res/SomeFile.txt
   visible: true
   learner_created: true
-- name: src/editor/res/Hellos.txt
+- name: src/editor/res/AnotherFile.txt
   visible: true
   learner_created: true
 feedback_link: https://hyperskill.org/projects/38/stages/202/implement#comment
-status: Failed
+status: Solved
 feedback:
-  message: |-
-    Wrong answer in test #7
-
-    Text should be the same after saving and loading same file
-  time: Mon, 12 Jul 2021 13:00:41 UTC
-record: -1
+  message: Congratulations!
+  time: Mon, 12 Jul 2021 13:24:49 UTC
+record: 2
