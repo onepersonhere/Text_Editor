@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class TextPane extends JPanel {
+    static JTextArea textArea = new JTextArea();
     public TextPane(){
         setBounds(50,70,485,360);
         setLayout(new BorderLayout());
@@ -11,7 +12,6 @@ public class TextPane extends JPanel {
     }
 
     private void addTextArea(){
-        JTextArea textArea = new JTextArea();
         textArea.setLineWrap(false);
         textArea.setWrapStyleWord(true);
         textArea.setName("TextArea");
@@ -22,5 +22,9 @@ public class TextPane extends JPanel {
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 
         add(scrollPane);
+    }
+
+    public static JTextArea getTextArea() {
+        return textArea;
     }
 }

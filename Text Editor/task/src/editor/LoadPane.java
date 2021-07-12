@@ -2,8 +2,11 @@ package editor;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class LoadPane extends JPanel {
+    JTextField textField = new JTextField();
     public LoadPane(){
         setBounds(40,30,495,35);
         setLayout(new FlowLayout(FlowLayout.LEFT,10,5));
@@ -14,7 +17,6 @@ public class LoadPane extends JPanel {
     }
 
     private void addTextField(){
-        JTextField textField = new JTextField();
         textField.setPreferredSize(new Dimension(265,30));
         textField.setName("FilenameField");
         add(textField);
@@ -26,6 +28,13 @@ public class LoadPane extends JPanel {
         saveButton.setName("SaveButton");
         saveButton.setFocusPainted(false);
         saveButton.setFont(new Font("Arial", Font.BOLD, 17));
+        saveButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                String Filename = textField.getText();
+                Storage.saveToFile(Filename);
+            }
+        });
         add(saveButton);
     }
 
@@ -35,6 +44,14 @@ public class LoadPane extends JPanel {
         loadButton.setName("LoadButton");
         loadButton.setFocusPainted(false);
         loadButton.setFont(new Font("Arial", Font.BOLD, 17));
+        loadButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                String Filename = textField.getText();
+                TextPane.getTextArea().setText("");
+                Storage.loadFromFile(Filename);
+            }
+        });
         add(loadButton);
     }
 }
