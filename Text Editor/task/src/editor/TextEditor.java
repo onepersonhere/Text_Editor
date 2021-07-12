@@ -17,7 +17,9 @@ public class TextEditor extends JFrame {
     public void iniComponents(){
         JPanel loadPane = new LoadPane();
         JPanel textPane = new TextPane();
+        JMenuBar menuBar = new MenuBar();
         add(loadPane);
         add(textPane);
+        setJMenuBar(menuBar);
     }
 }

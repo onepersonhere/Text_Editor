@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class LoadPane extends JPanel {
-    JTextField textField = new JTextField();
+    static JTextField textField = new JTextField();
     public LoadPane(){
         setBounds(40,30,495,35);
         setLayout(new FlowLayout(FlowLayout.LEFT,10,5));
@@ -53,5 +53,9 @@ public class LoadPane extends JPanel {
             }
         });
         add(loadButton);
+    }
+
+    public static JTextField getTextField() {
+        return textField;
     }
 }
