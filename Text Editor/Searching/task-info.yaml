@@ -904,6 +904,16 @@ files:
 - name: src/editor/regexList.java
   visible: true
   learner_created: true
+- name: SomeFile.txt
+  visible: true
+  learner_created: true
+- name: AnotherFile.txt
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/38/stages/204/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">JetBrains
+    Academy</a> to continue learning.
+  time: Tue, 13 Jul 2021 07:49:05 UTC
 record: -1

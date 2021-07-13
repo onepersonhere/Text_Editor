@@ -3,7 +3,6 @@ package editor;
 import java.util.List;
 
 public class IndexList {
-    //TODO: Reset List for every search
     private static List<Integer> list;
     private static int currentIdx = 0;
 

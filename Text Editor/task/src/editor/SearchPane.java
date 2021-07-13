@@ -14,7 +14,7 @@ import java.util.Map;
 public class SearchPane extends JPanel {
     final int buttonSize = 30;
     public SearchPane(){
-        setBackground(Color.GRAY);
+        //setBackground(Color.GRAY);
         setPreferredSize(new Dimension(500,buttonSize));
         setLayout(new FlowLayout(FlowLayout.LEFT,5,0));
         addSearchBar();
@@ -30,7 +30,6 @@ public class SearchPane extends JPanel {
         searchBar.setName("SearchField");
         add(searchBar);
     }
-    //TODO: Search Button to execute search
     private void addSearchButton(){
         JButton searchButton = new JButton();
         searchButton.setPreferredSize(new Dimension(buttonSize,buttonSize));
@@ -133,9 +132,8 @@ public class SearchPane extends JPanel {
         });
         add(nextButton);
     }
-
+    public static JCheckBox regexCheckbox = new JCheckBox("Use regex");
     private void addRegexCheckbox(){
-        JCheckBox regexCheckbox = new JCheckBox("Use regex");
         regexCheckbox.setPreferredSize(new Dimension(100,buttonSize));
         regexCheckbox.setName("UseRegExCheckbox");
         regexCheckbox.setFocusPainted(false);

@@ -18,8 +18,6 @@ public class Search extends Thread{
             regexSearch();
         }
     }
-    //TODO: Grab text to search by itself
-    //TODO: Place Caret by itself
     public void regularSearch(){
         List<Integer> list = new ArrayList<>();
         //loop through entire textArea

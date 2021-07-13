@@ -1,6 +1,7 @@
 package editor;
 
 import javax.swing.*;
+import javax.swing.filechooser.FileSystemView;
 import java.awt.*;
 
 public class TextEditor extends JFrame {
@@ -12,9 +13,9 @@ public class TextEditor extends JFrame {
         setLocationRelativeTo(null);
         iniComponents();
         setVisible(true);
-
+        add(jfc);
     }
-
+    public static JFileChooser jfc = new JFileChooser();
     public void iniComponents(){
         JPanel topPane = new JPanel();
         JPanel loadPane = new LoadPane();
@@ -29,5 +30,7 @@ public class TextEditor extends JFrame {
         add(topPane,BorderLayout.NORTH);
         add(textPane,BorderLayout.CENTER);
         setJMenuBar(menuBar);
+        jfc.setName("FileChooser");
+        jfc.setVisible(false);
     }
 }
