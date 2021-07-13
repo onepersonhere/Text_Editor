@@ -658,17 +658,6 @@ files:
         }
     }
   learner_created: false
-- name: src/editor/res/AnotherFile.txt
-  visible: true
-  text: |+
-    Basic text editor
-    Type here too
-    Here also
-
-  learner_created: true
-- name: src/editor/res/SomeFile.txt
-  visible: true
-  learner_created: true
 - name: src/editor/MenuBar.java
   visible: true
   text: |
@@ -876,6 +865,44 @@ files:
             }
         }
     }
+  learner_created: true
+- name: src/editor/resources/AnotherFile.txt
+  visible: true
+  text: |+
+    Basic text editor
+    Type here too
+    Here also
+
+  learner_created: true
+- name: src/editor/resources/SomeFile.txt
+  visible: true
+  learner_created: true
+- name: src/editor/resources/SaveIcon.jpg
+  visible: true
+  learner_created: true
+- name: src/editor/resources/OpenIcon.jpg
+  visible: true
+  learner_created: true
+- name: src/editor/SearchPane.java
+  visible: true
+  learner_created: true
+- name: src/editor/resources/next.png
+  visible: true
+  learner_created: true
+- name: src/editor/resources/search.jpg
+  visible: true
+  learner_created: true
+- name: src/editor/resources/prev.jpg
+  visible: true
+  learner_created: true
+- name: src/editor/Search.java
+  visible: true
+  learner_created: true
+- name: src/editor/IndexList.java
+  visible: true
+  learner_created: true
+- name: src/editor/regexList.java
+  visible: true
   learner_created: true
 feedback_link: https://hyperskill.org/projects/38/stages/204/implement#comment
 status: Unchecked

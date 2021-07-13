@@ -6,7 +6,7 @@ import java.awt.*;
 public class TextPane extends JPanel {
     static JTextArea textArea = new JTextArea();
     public TextPane(){
-        setBounds(50,70,485,360);
+        //setBounds(10,50,570,385);
         setLayout(new BorderLayout());
         addTextArea();
     }

@@ -3,7 +3,7 @@ package editor;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+//TODO: add Search JMenu
 public class MenuBar extends JMenuBar {
     JMenu fileMenu = new JMenu("File");
     public MenuBar(){
@@ -19,9 +19,9 @@ public class MenuBar extends JMenuBar {
         loadMenu.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                String filename = LoadPane.getTextField().getText();
+                //String filename = LoadPane.getTextField().getText();
                 TextPane.getTextArea().setText("");
-                Storage.loadFromFile(filename);
+                //Storage.loadFromFile(filename);
             }
         });
         fileMenu.add(loadMenu);
@@ -32,8 +32,8 @@ public class MenuBar extends JMenuBar {
         saveMenu.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                String filename = LoadPane.getTextField().getText();
-                Storage.saveToFile(filename);
+                //String filename = LoadPane.getTextField().getText();
+                //Storage.saveToFile(filename);
             }
         });
         fileMenu.add(saveMenu);
